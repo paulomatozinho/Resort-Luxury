@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resort Luxury</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="top" class="top_bar">
+            <h3 class="intro">Resort Luxury</h3>
+            <p>Saiba Mais</p>
+        </div>
+
+        <div class="navbar">
+            <div>
+                <h1>AirTravel</h1>
+            </div>
+
+            <div class="search">
+                <form>
+                    <div class="input_container">
+                        <input type="text" placeholder="Pesquisar">
+                    </div>
+
+                    <div>
+                        <button>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="menu">
+                <ul class="nav_menu">
+                    <li>
+                        <a onclick="closeMenu()" href="#listings" class="nav_link">Destinos</a>
+                    </li>
+                    <li>
+                        <a onclick="closeMenu()" href="#featured" class="nav_link">Paraisos</a>
+                    </li>
+                    <li>
+                        <a onclick="closeMenu()" href="#popular" class="nav_link">Populares</a>
+                    </li>
+                </ul>
+
+                <div class="mobile" onclick="mobileMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="sort_bar">
+            <div>
+                <i class="fa-solid fa-house-chimney"></i>
+                <p>House</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-snowflake"></i>
+                <p>Artic</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-rocket"></i>
+                <p>Space</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-tree"></i>
+                <p>Trees</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-building"></i>
+                <p>City</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-campground"></i>
+                <p>Camping</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-umbrella-beach"></i>
+                <p>Beach</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-volleyball"></i>
+                <p>Games</p>
+            </div>
+        </div>
+
+
+        <!-- Listings -->
+        <div class="listings" id="listings">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE1fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=400&q=60"
+                    alt="imagem de resort">
+                <div>
+                    <div class="card_title">
+                        <h4>Florianópolis, Santa Catarina</h4>
+                        <p>5.0<i class="fa-solid fa-star"></i></p>
+                    </div>
+                    <p><span class="grey">Disponível para reserva</span> </p>
+                    <p><span class="grey">Jun 1 - 7</span> </p>
+                    <p>R$ 749,00 diária</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.pexels.com/photos/261204/pexels-photo-261204.jpeg?auto=compress&cs=tinysrgb&w=400"
+                    alt="imagem de resort">
+                <div>
+                    <div class="card_title">
+                        <h4>Maragogi, Alagoas</h4>
+                        <p>5.0<i class="fa-solid fa-star"></i></p>
+                    </div>
+                    <p><span class="grey">Disponível para reserva</span> </p>
+                    <p><span class="grey">Out 1 - 7</span> </p>
+                    <p>R$ 950,00 diarias</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.pexels.com/photos/2646070/pexels-photo-2646070.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load"
+                    alt="imagem de resort">
+                <div>
+                    <div class="card_title">
+                        <h4>Porto Seguro, Bahia</h4>
+                        <p>5.0<i class="fa-solid fa-star"></i></p>
+                    </div>
+                    <p><span class="grey">Disponível para reserva</span> </p>
+                    <p><span class="grey">Mar 1 - 7</span> </p>
+                    <p>R$ 990,00 diária</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="imagem de resort">
+                <div>
+                    <div class="card_title">
+                        <h4>Olímpia, São paulo</h4>
+                        <p>5.0<i class="fa-solid fa-star"></i></p>
+                    </div>
+                    <p><span class="grey">Disponível para reserva</span> </p>
+                    <p><span class="grey">Nov 1 - 7</span> </p>
+                    <p>R$ 690,00 diária</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                    alt="imagem de resort">
+                <div>
+                    <div class="card_title">
+                        <h4>Japaratinga, Alagoas</h4>
+                        <p>5.0<i class="fa-solid fa-star"></i></p>
+                    </div>
+                    <p><span class="grey">Disponível para reserva</span> </p>
+                    <p><span class="grey">Jun 1 - 7</span> </p>
+                    <p>R$ 749,00 diária</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.pexels.com/photos/8143671/pexels-photo-8143671.jpeg?auto=compress&cs=tinysrgb&w=400"
+                    alt="imagem de resort">
+                <div>
+                    <div class="card_title">
+                        <h4>Mangaratiba, Rio de Janeiro</h4>
+                        <p>5.0<i class="fa-solid fa-star"></i></p>
+                    </div>
+                    <p><span class="grey">Disponível para reserva</span> </p>
+                    <p><span class="grey">Fev 1 - 7</span> </p>
+                    <p>R$ 890,00 diária</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.pexels.com/photos/14012236/pexels-photo-14012236.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="imagem de resort">
+                <div>
+                    <div class="card_title">
+                        <h4>Cumbuco, Ceará</h4>
+                        <p>5.0<i class="fa-solid fa-star"></i></p>
+                    </div>
+                    <p><span class="grey">Disponível para reserva</span> </p>
+                    <p><span class="grey">Abr 1 - 7</span> </p>
+                    <p>R$ 900,00 diária</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.pexels.com/photos/2646070/pexels-photo-2646070.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load"
+                    alt="imagem de resort">
+                <div>
+                    <div class="card_title">
+                        <h4>Ilhéus, Bahia</h4>
+                        <p>5.0<i class="fa-solid fa-star"></i></p>
+                    </div>
+                    <p><span class="grey">Disponível para reserva</span> </p>
+                    <p><span class="grey">Jun 1 - 7</span> </p>
+                    <p>R$ 780,00 diária</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Featured -->
+        <div class="featured" id="featured">
+            <div class="title">
+                <h1>Paraisos</h1>
+            </div>
+
+            <div class="featured_wrapper">
+                <div class="main">
+                    <img src="https://images.unsplash.com/photo-1610641818989-c2051b5e2cfd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                        alt="imagem de resort">
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=725&q=80"
+                        alt="imagem de resort">
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1596178060810-72f53ce9a65c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                        alt="imagem de resort">
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDd8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=400&q=60"
+                        alt="imagem de resort">
+                </div>
+
+                <div>
+                    <img src="https://images.unsplash.com/photo-1623812058330-ccfa078cffb3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                        alt="imagem de resort">
+                </div>
+            </div>
+        </div>
+
+        <!-- Popular -->
+        <div class="featured" id="popular">
+            <div class="title">
+                <h1>Populares</h1>
+            </div>
+
+            <div class="featured_wrapper">
+                <div>
+                    <img src="https://images.pexels.com/photos/879010/pexels-photo-879010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="imagem de resort">
+                </div>
+                <div>
+                    <img src="https://images.pexels.com/photos/7614418/pexels-photo-7614418.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load"
+                        alt="imagem de resort">
+                </div>
+                <div class="main">
+                    <img src="https://images.unsplash.com/photo-1561811358-21aef14f0551?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80"
+                        alt="">
+                </div>
+                <div>
+                    <img src="https://images.pexels.com/photos/4713248/pexels-photo-4713248.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="imagem de resort">
+                </div>
+
+                <div>
+                    <img src="https://images.pexels.com/photos/2373201/pexels-photo-2373201.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="imagem de resort">
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Top -->
+        <div class="center">
+            <a href="#top">
+                <i class="fa-solid fa-chevron-up"></i>
+            </a>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <ul class="left_menu">
+                <li>AirTravel</li>
+                <li>Privacidade</li>
+                <li>Termos</li>
+                <li>Destinos</li>
+            </ul>
+
+            <ul class="right_menu">
+                <li>Suporte</li>
+                <li>Contato</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
